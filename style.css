@@ -1,0 +1,572 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+  font-family: "Work Sans", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #333;
+  /* padding: 1rem 2rem; */
+  background-color: #eafaf1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* header */
+.header {
+  padding: 0.5rem 10%;
+  margin-bottom: 3rem;
+}
+
+.header-bar {
+  padding: 1rem 0rem;
+}
+
+.header-bar-list {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 2rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header-bar-list > li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.btn:link,
+.btn:visited {
+  color: #00ad6a;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.btn:hover {
+  color: #080c16;
+}
+
+.btn-logo {
+  margin-right: auto;
+}
+
+.btn-sign-up {
+  line-height: 1;
+  box-sizing: border-box;
+  padding: 0.4rem 1.6rem;
+  border: 2px solid #00ad6a;
+  background-color: #00ad6a;
+
+  position: relative;
+}
+
+.btn-sign-up::after {
+  box-sizing: border-box;
+
+  height: 100%;
+  width: 100%;
+
+  display: inline-block;
+  padding: 0.4rem 1.6rem;
+  outline: 2px solid #00ad6a;
+  background-color: #eafaf1;
+
+  content: "Sign Up";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.btn-sign-up:hover {
+  color: #00ad6a;
+}
+
+.btn-sign-up:hover::after {
+  transform: translateX(4px) translateY(-4px);
+}
+
+/* main */
+.main {
+  padding: 0 10%;
+}
+
+.description {
+  width: 35vw;
+  margin: 8rem auto;
+  text-align: center;
+}
+
+.description-heading {
+  font-size: 3.2rem;
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.description-parag {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.cards {
+  margin: 5rem auto;
+  padding: 1rem 0;
+
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 3rem;
+}
+
+.description-card {
+  width: calc(100% / 3);
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1.5rem;
+}
+
+.description-card-header {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #00ad6a;
+  line-height: 1;
+}
+
+.description-card-list {
+  list-style: disc;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.5;
+
+  margin-left: 1.6rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+}
+
+.description-card-footer {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #555;
+  line-height: 1.5;
+}
+
+.description-card-footer a:link,
+.description-card-footer a:visited {
+  color: #333;
+}
+
+.pricing-card {
+  width: calc(100% / 3);
+  background-color: #fff;
+  border: 1px solid #9999994d;
+  border-radius: 0.3rem;
+}
+
+.pricing-card-subheader {
+  background-color: #f8f8f8;
+  color: #919191;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  padding: 1rem 4rem;
+  line-height: 1.2;
+  border-bottom: 1px solid #99999950;
+}
+
+.pricing-card-header {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #00ad6a;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 2rem 4rem 0;
+  line-height: 1;
+}
+
+.pricing-card-price {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #555;
+  text-align: center;
+  margin-bottom: 1rem;
+  padding: 0 4rem;
+}
+
+.btn-plan {
+  display: block;
+  background-color: #1fe374;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  margin: 2rem auto;
+  padding: 1rem 3rem;
+  border: none;
+  outline: none;
+}
+
+.btn-plan:hover {
+  color: #080c16;
+  transform: scale(1.1);
+}
+
+.pricing-card-list-header {
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  padding: 0 4rem;
+}
+
+.pricing-card-list {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.5;
+  padding: 0 4rem 4rem;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.5rem;
+}
+
+.pricing-card-check-icon {
+  width: 1.2rem;
+  height: 1.2rem;
+  stroke: #1fe374;
+}
+
+.recommened {
+  border: 1px solid #00ad6a;
+  transform: scale(1.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.recommened > .pricing-card-subheader {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.2rem 4rem;
+  outline: none;
+  border: none;
+  background-color: #00ad6a;
+  color: #fff;
+}
+
+.recommened h2 {
+  font-weight: 700;
+}
+
+.testimonial {
+  width: 30vw;
+  margin: 12.8rem auto 8rem;
+  text-align: center;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.testimonial-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+}
+
+.testimonial-text {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.testimonial-author {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #00ad6a;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}
+
+.faq {
+  background-color: #fff;
+  padding: 6rem 4rem;
+}
+
+.faq-header {
+  font-size: 2.4rem;
+  font-weight: 800;
+  margin-bottom: 2rem;
+}
+
+.faq-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 2rem;
+  column-gap: 4rem;
+}
+
+.faq-item h3 {
+  color: #333;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.faq-item p {
+  color: #555;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* footer */
+.footer {
+  background-color: #080c16;
+  padding: 4rem 10%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 8rem;
+}
+
+.main-footer {
+  display: flex;
+  gap: 4rem;
+}
+
+.left-footer {
+  width: 50%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+}
+
+.btn-footer-signup:link,
+.btn-footer-signup:visited {
+  padding: 1.2rem 2.4rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  background-color: #777;
+
+  position: relative;
+}
+.btn-footer-signup::after {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  padding: 1.2rem 2.4rem;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  color: #080c16;
+  background-image: linear-gradient(90deg, #00ab6a, #23ea76);
+
+  content: "Sign Up for a Free 30-Day Trial";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.btn-footer-signup:hover::after {
+  transform: translateX(3px) translateY(-3px);
+}
+
+.right-footer {
+  width: 50%;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  row-gap: 0.5rem;
+  column-gap: 1rem;
+}
+
+.right-footer span {
+  color: #fcfcfc;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.right-footer a:link,
+.right-footer a:visited {
+  color: #1fe374;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.right-footer a:hover {
+  color: #fcfcfc;
+}
+
+.sub-footer {
+  color: #adadad;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.2;
+  width: 50%;
+
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sub-footer a:link,
+.sub-footer a:visited {
+  color: #1fe374;
+  text-decoration: none;
+}
+.sub-footer a:hover {
+  color: #fcfcfc;
+}
+
+.verbalism {
+  font-size: 1.1rem;
+  font-weight: 500;
+  align-self: center;
+  color: #1fe374;
+  font-style: italic;
+}
