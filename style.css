@@ -459,8 +459,8 @@ html {
 .faq-content {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  row-gap: 2rem;
+  grid-template-rows: auto;
+  row-gap: 3rem;
   column-gap: 4rem;
 }
 
@@ -511,6 +511,7 @@ html {
   font-size: 1.2rem;
   font-weight: 700;
   background-color: #777;
+  text-align: center;
 
   position: relative;
 }
@@ -594,16 +595,18 @@ html {
 }
 
 /* media queries */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   /* phần FAQ */
   .faq {
     padding: 3rem 2rem;
   }
   .faq-content {
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    row-gap: 2rem;
-    column-gap: 3rem;
+    grid-template-rows: auto;
+    gap: 3rem;
+  }
+  .faq-item h3 {
+    margin-bottom: 0.75rem;
   }
 
   /* phần card */
@@ -698,14 +701,7 @@ html {
   }
 }
 
-@media (max-width: 480px) {
-  /* phần FAQ */
-  .faq-content {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 4rem;
-  }
-
+@media screen and (max-width: 480px) {
   /* phần header  */
   .header {
     padding: 0.5rem 5%;
@@ -788,10 +784,6 @@ html {
   .testimonial {
     width: 70vw;
   }
-  .testimonial-image {
-    height: 50px;
-    width: auto;
-  }
   .testimonial-text {
     font-size: 1.2rem;
   }
@@ -807,11 +799,12 @@ html {
     font-size: 1.8rem;
   }
   .faq-content {
+    grid-template-columns: 1fr;
     gap: 2rem;
   }
   .faq-item h3 {
     font-size: 1.4rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
   }
   .faq-item p {
     font-size: 1.2rem;
@@ -820,5 +813,22 @@ html {
   /* phần footer  */
   .footer {
     padding: 3rem 5% 0.75rem;
+    gap: 4rem;
+  }
+  .btn-footer-signup {
+    width: 90%;
+  }
+  .right-footer {
+    gap: 0.5rem;
+  }
+  .right-footer a:link,
+  .right-footer a:visited {
+    font-size: 1rem;
+  }
+  .sub-footer {
+    font-size: 0.9rem;
+  }
+  .verbalism {
+    font-size: 1rem;
   }
 }
