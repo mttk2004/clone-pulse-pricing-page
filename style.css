@@ -109,7 +109,6 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #333;
-  /* padding: 1rem 2rem; */
   background-color: #eafaf1;
 }
 
@@ -243,7 +242,7 @@ html {
 .description-heading {
   font-size: 3.2rem;
   font-weight: 800;
-  line-height: 1;
+  line-height: 0.8;
   margin-bottom: 1rem;
 }
 
@@ -335,7 +334,7 @@ html {
   text-align: center;
   margin-bottom: 1rem;
   padding: 2rem 4rem 0;
-  line-height: 1;
+  line-height: 0.8;
 }
 
 .pricing-card-price {
@@ -376,7 +375,7 @@ html {
 .pricing-card-list {
   font-size: 1.4rem;
   font-weight: 400;
-  color: #666;
+  color: #555;
   line-height: 1.3;
   padding: 0 4rem 4rem;
 
@@ -508,7 +507,7 @@ html {
 .btn-footer-signup:link,
 .btn-footer-signup:visited {
   padding: 1.2rem 2.4rem;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
   background-color: #777;
   text-align: center;
@@ -519,7 +518,7 @@ html {
   display: inline-block;
   height: 100%;
   width: 100%;
-  padding: 1.2rem 2.4rem;
+  padding: 1.2rem;
   box-sizing: border-box;
   border: none;
   outline: none;
@@ -542,26 +541,28 @@ html {
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
   gap: 1rem;
 }
 
 .right-footer span {
-  color: #fcfcfc;
+  color: #eafaf1;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
 .right-footer a:link,
 .right-footer a:visited {
+  box-sizing: border-box;
   color: #1fe374;
   text-decoration: none;
   font-size: 1.2rem;
-  line-height: 1.1;
+  padding-top: 0.3rem;
+  line-height: 1;
 }
 
 .right-footer a:hover {
-  color: #fcfcfc;
+  color: #eafaf1;
 }
 
 .sub-footer {
@@ -583,7 +584,7 @@ html {
   text-decoration: none;
 }
 .sub-footer a:hover {
-  color: #fcfcfc;
+  color: #eafaf1;
 }
 
 .verbalism {
@@ -725,43 +726,25 @@ html {
     width: 80vw;
     margin: 3rem auto 2rem;
   }
-  .description-heading {
-    font-size: 2.4rem;
-  }
-  .description-parag {
-    font-size: 1.2rem;
-  }
 
   /* phần card  */
   .description-card {
     width: 100%;
     gap: 1rem;
   }
-  .description-card-header {
-    font-size: 1.4rem;
-  }
-  .description-card-list {
-    font-size: 1.2rem;
-  }
-  .description-card-footer {
-    font-size: 1.2rem;
-  }
 
   .pricing-card {
     width: 100%;
   }
   .pricing-card-header {
-    font-size: 2.4rem;
     padding: 2rem 5% 0;
     width: 90%;
   }
   .pricing-card-price {
-    font-size: 1.4rem;
     width: 90%;
     padding: 0 5% 2rem;
   }
   .btn-plan {
-    font-size: 1.2rem;
     order: 6;
 
     box-sizing: border-box;
@@ -776,7 +759,6 @@ html {
     padding: 0 5%;
   }
   .pricing-card-list {
-    font-size: 1.2rem;
     padding: 0 2rem;
   }
 
@@ -784,30 +766,14 @@ html {
   .testimonial {
     width: 70vw;
   }
-  .testimonial-text {
-    font-size: 1.2rem;
-  }
-  .testimonial-author {
-    font-size: 0.9rem;
-  }
 
   /* phần faq  */
   .faq {
     padding: 2rem 1.5rem;
   }
-  .faq-header {
-    font-size: 1.8rem;
-  }
   .faq-content {
     grid-template-columns: 1fr;
     gap: 2rem;
-  }
-  .faq-item h3 {
-    font-size: 1.4rem;
-    margin-bottom: 0.3rem;
-  }
-  .faq-item p {
-    font-size: 1.2rem;
   }
 
   /* phần footer  */
@@ -815,15 +781,14 @@ html {
     padding: 3rem 5% 0.75rem;
     gap: 4rem;
   }
-  .btn-footer-signup {
-    width: 90%;
+  .btn-footer-signup:link,
+  .btn-footer-signup:visited {
+    padding: 1.2rem;
+    box-sizing: border-box;
+    width: 100%;
   }
   .right-footer {
-    gap: 0.5rem;
-  }
-  .right-footer a:link,
-  .right-footer a:visited {
-    font-size: 1rem;
+    column-gap: 0.5rem;
   }
   .sub-footer {
     font-size: 0.9rem;

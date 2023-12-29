@@ -1,14 +1,14 @@
 # Clone 'Pulse | Pricing Page'
 
-Dự án này là một bản sao của trang 'Pulse | Pricing', được thực hiện với mục đích học tập và nâng cao kỹ năng.
+Dự án này là một bản sao giao diện người dùng của trang 'Pulse | Pricing', được thực hiện với mục đích học tập và nâng cao kỹ năng.
 
 **Xem trang web**: https://mttk2004.github.io/clone-pulse-pricing-page
 
 ## Kết quả đạt được
 
-- Sử dụng CSS Grid và Flexbox ở mức độ cơ bản.
-- Thành thạo việc sử dụng ::after pseudo-element để tạo hiệu ứng di chuột.
-- Nắm vững kiến thức cơ bản về thiết kế web, tuân theo nguyên tắc thiết kế tốt và thực hành tốt nhất để tạo ra giao diện người dùng chuẩn mực.
+- Khai thác sức mạnh của CSS Grid và Flexbox ở mức độ cơ bản.
+- Thành thạo sử dụng ::after pseudo-element để tạo hiệu ứng di chuột.
+- Nắm vững kiến thức cơ bản về thiết kế web, tuân theo nguyên tắc thiết kế UI/UX để tạo ra giao diện người dùng chuẩn mực.
 
 ## Dòng thời gian
 
